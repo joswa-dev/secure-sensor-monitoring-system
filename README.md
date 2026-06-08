@@ -1,43 +1,73 @@
-# Sensor Monitoring System (Python + FastAPI + SQLAlchemy)
+# Secure Sensor Monitoring System
 
-A real-time simulated industrial sensor monitoring backend built using FastAPI and SQLite.
+A secure real-time sensor monitoring system built with FastAPI, JWT Authentication, WebSockets, Docker, and SQLite.
 
 ## Features
 
-- Simulates temperature, pressure, and vibration sensor streams
-- Stores live sensor telemetry into SQL database
-- Detects abnormal sensor values using alert thresholds
-- Provides REST API for retrieving latest sensor readings
-- Background threaded data generation pipeline
-- Swagger API documentation support
+- User Registration & Login
+- JWT Authentication
+- Protected Sensor API
+- Real-time Sensor Monitoring
+- WebSocket Support
+- SQLite Database
+- Dockerized Application
+- Docker Compose Support
 
 ## Tech Stack
 
-Python
-FastAPI
-SQLAlchemy
-SQLite
-Threading
+- Python
+- FastAPI
+- SQLite
+- JWT Authentication
+- Docker
+- Docker Compose
+- WebSockets
 
 ## API Endpoints
 
-GET / → System status
+### Authentication
+- POST `/register`
+- POST `/login`
 
-GET /sensors → Returns latest 20 sensor readings
+### Protected Routes
+- GET `/protected-sensors`
 
-## Example Output
+## Run Locally
 
+### Clone Repository
+
+```bash
+git clone https://github.com/joswa-dev/secure-sensor-monitoring-system.git
+cd secure-sensor-monitoring-system
+```
+
+### Run with Docker
+
+```bash
+docker compose up --build
+```
+
+### Open API Docs
+
+```bash
+http://localhost:8000/docs
+```
+
+## Example Login
+
+```json
 {
-  "sensor_name": "temperature",
-  "sensor_value": 81.04,
-  "timestamp": "2026-04-04T09:02:56"
+  "username": "admin",
+  "password": "admin123"
 }
+```
 
-## Use Case
+## Project Status
 
-This project simulates a lightweight industrial telemetry monitoring service similar to systems used in:
+✅ Completed  
+✅ Dockerized  
+✅ GitHub Ready
 
-- factory automation
-- predictive maintenance pipelines
-- robotics monitoring
-- IoT dashboards
+## Author
+
+**Shibin Joswa**
