@@ -68,6 +68,16 @@ http://localhost:8000/docs
 ✅ Dockerized  
 ✅ GitHub Ready
 
-## Author
+## Screenshots
+Swagger API Docs running successfully
 
-**Shibin Joswa**
+## Future Improvements
+- Role-based access control
+- Redis caching
+- PostgreSQL migration
+- Cloud deployment (AWS / Render)
+
+## Author
+Shibin Joswa
+LinkedIn: https://www.linkedin.com/in/shibin-joswa-dev/
+GitHub: https://github.com/joswa-dev
